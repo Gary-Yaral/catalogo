@@ -147,29 +147,13 @@ body,
 
 .card-color,
 .card-size{
-    width: 18px;
-    height:18px;
+    width: 1.5rem;
+    height:1.5rem;
 }
 
 .card-color{
     border-radius: 50%;
     margin-right:3px;
-}
-
-.card-color:nth-child(1){ 
-    background:rgb(51, 255, 0);  
-}
-
-.card-color:nth-child(2){
-    background:rgb(116, 167, 150);
-}
-
-.card-color:nth-child(3){ 
-    background:rgb(51, 255, 0);  
-}
-
-.card-color:nth-child(4){
-    background:rgb(116, 167, 150);
 }
 
 .card-size{
@@ -201,7 +185,7 @@ body,
     width:100%;
     background: var(--blue-light);
     color:#fff;
-    height:1.8rem;
+    height:2rem;
     display: flex;
     justify-content: center;
     align-items:center;

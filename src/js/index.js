@@ -213,7 +213,7 @@ function createSections(){
             let cardBlock = document.createElement('div');
             cardBlock.classList.add('card-block');
             cardBlock.innerHTML = `<div class="card-price">$${price.toFixed(2)}</div>
-                                    <div class="card-btn">Comprar</div>`
+                                    <div class="card-btn">Agregar</div>`
             
             cardBody.append(cardBlock);                     
             card.append(cardHeader);
