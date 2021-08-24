@@ -13,6 +13,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body,
@@ -62,6 +63,8 @@ nav a span{
 .container{ 
     margin-top:4rem;
     max-width:800px;
+    margin-bottom: 4rem;
+    height:fit-content;
 }
 
 .section{
@@ -70,6 +73,7 @@ nav a span{
     display:flex;
     justify-content: center;
     flex-direction: column;
+    scroll-margin-top: 4rem;
 }
 
 .section-title{
@@ -228,6 +232,64 @@ nav a span{
     cursor:pointer;
     font-size:1rem
 }
+
+footer{
+    width:100%;
+    min-height:4rem;
+    display:flex;
+    background: var(--black);
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-category{
+    position:fixed;
+    width:100%;
+    height: 100%;
+    background:rgb(27, 27, 27);
+    color:#fff;
+    z-index:100;
+    overflow: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-close{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:2rem;
+    height:2rem;
+    border:none;
+    background:transparent;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1.5rem;
+}
+
+.modal-list{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    list-style: none;
+}
+
+.modal-list li{
+    width:100%;
+    height:2.5rem;
+    display:flex;
+    justify-content: center;
+    font-size:1.5rem;
+}
+
+.modal-hidden{
+    display:none;
+}
+
 
 @media screen and (max-width: 650px) {
     .cards{

@@ -125,12 +125,40 @@ const ecommerceData =[
 
 
 let root = document.querySelector('.container');
+let categoryList = document.querySelector('.modal-list');
+let closeModalBtn = document.querySelector('.modal-close');
+let openModalBtn = document.querySelector('.modal-open');
+let modalCategory = document.querySelector('.modal-category');
+
+//Btn close modal
+closeModalBtn.addEventListener('click', () => {
+    modalCategory.classList.add('modal-hidden');
+})
+
+// Btn open modal
+openModalBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalCategory.classList.remove('modal-hidden');
+})
+// Render card
 createSections();
 
 function createSections(){
     ecommerceData.forEach(({category,items}) => {
+
+        //Modal category
+        let a = document.createElement('a');
+        a.setAttribute('href','#'+category)
+        a.innerHTML = category;
+        a.addEventListener('click', ()=> {
+            modalCategory.classList.add('modal-hidden');
+        })
+        categoryList.append(a);
+        
+        // Section
         let section = document.createElement('div');
         section.classList.add('section');
+        section.setAttribute('id', category);
         let sectionTitle = document.createElement('div');
         sectionTitle.classList.add('section-title');
         sectionTitle.innerHTML = category;
@@ -227,3 +255,5 @@ function createSections(){
     })
 
 }
+
+
