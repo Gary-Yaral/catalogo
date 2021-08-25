@@ -278,12 +278,13 @@ footer{
     list-style: none;
 }
 
-.modal-list li{
+.modal-list a{
     width:100%;
     height:2.5rem;
     display:flex;
     justify-content: center;
     font-size:1.5rem;
+    text-decoration:none;
 }
 
 .modal-hidden{
