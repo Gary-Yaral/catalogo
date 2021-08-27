@@ -1,0 +1,231 @@
+.cart{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    min-height:100vh;
+    position:fixed;
+    z-index:1000;
+    background:#fff;
+}
+
+.cart-header{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
+    height:4rem;
+}
+
+.cart-header-button{
+    font-weight: bolder;
+    font-size:1rem;
+    position:absolute;
+    top:0;
+    right:0;
+    width:2.5rem;
+    height:2.5rem;
+    z-index: 1100;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-header-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cart-body,
+.cart-items-selected{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.cart-items-selected{
+    height:fit-content;
+    max-height: 400px;
+    overflow:auto;
+    padding-bottom: .5rem;
+}
+
+.cart-item-card{
+    display:flex;
+    justify-content: space-between;
+    width:95%;
+    align-self: center;
+    margin-top:.5rem;
+    box-shadow: 0 0 3px rgba(0,0,0,.5);
+    position:relative;
+}
+.card-item-remove{
+    position:absolute;
+    top:0px;
+    right:0px;
+    width:1.5rem;
+    height:1.5rem;
+    font-size: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+
+.cart-item-img{
+    display:flex;
+    width:40%;
+}
+
+.cart-item-info{
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.cart-item-title{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
+.cart-item-title,
+.cart-item-price,
+.cart-item-btns{
+    margin-top: .5rem;
+}
+
+.cart-item-price{
+    font-size: .7rem;
+}
+
+.cart-item-btns{
+    display: grid;
+    grid-template-columns: 2.6rem 2.6rem 2.6rem;
+    grid-template-rows: 1.5rem;
+    gap:5px;
+}
+
+.cart-item-btns button{
+    background: var(--black);
+    color:#fff;
+    border:none;
+}
+
+.cart-item-btns button:hover{
+    background: var(--blue-light);
+}
+
+.cart-item-btns input{
+    outline:none;
+    padding: 5px 2px;
+    text-align: center;
+}
+
+.cart-item-btns input::-webkit-inner-spin-button,
+.cart-item-btns input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    outline:none;
+}
+
+.cart-total{
+    width:100%;
+    display:flex;
+    border-top: 1px solid var(--black);
+    color:var(--black);
+    height:3rem;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+.cart-btns{
+    display:flex;
+    justify-content: space-around;
+    padding:.5rem;
+    width:100%;
+    height: fit-content;
+    margin-top: 1rem;
+}
+
+.cart-btns button{
+    width: 6.5rem;
+    height:2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cart-btns button:nth-child(1){
+    border:1px solid var(--black);
+    background:transparent;
+}
+
+.cart-btns button:nth-child(2){
+    border:none;
+    background:var(--blue-light);
+    color:#fff;
+}
+
+.cart-hidden{
+    display:none;
+}
+
+@media screen and (max-height: 823px){
+    .cart-items-selected{
+        height:fit-content;
+        max-height: 600px;
+        overflow:auto;
+    }
+}
+
+@media screen and (max-height: 731px){
+    .cart-items-selected{
+        height:fit-content;
+        max-height: 500px;
+        overflow:auto;
+    }
+}
+
+@media screen and (max-height: 736px){
+    .cart-items-selected{
+        height:fit-content;
+        max-height: 500px;
+        overflow:auto;
+    }
+}
+
+@media screen and (max-height: 640px){
+    .cart-items-selected{
+        height:fit-content;
+        max-height: 400px;
+        overflow:auto;
+    }
+}
+
+@media screen and (max-height: 670px){
+    .cart-items-selected{
+        height:fit-content;
+        max-height: 400px;
+        overflow:auto;
+    }
+}
+
+
+@media screen and (max-height: 568px){
+    .cart-items-selected{
+        height:fit-content;
+        max-height: 300px;
+        overflow:auto;
+    }
+}
+
+
+

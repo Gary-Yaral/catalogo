@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/index.css">
-    <title>Pikero | Cart</title>
+    <link rel="stylesheet" href="src/css/icons/flaticon.css">
+    <link rel="stylesheet" href="src/css/cart.css">
+    <title>Catálogo | Pedidos</title>
 </head>
 <body>
     <nav>
@@ -15,15 +17,39 @@
             <span></span>
         </a>
         <div class="business">Mi Tienda</div>
+        <a href="#" class="icon-nav">
+            <i class="flaticon-shopping-cart icon-cart"></i>
+            <span class="items-counter">0</span>
+        </a>
     </nav>
     <div class="container"></div>
     <footer>&copy Powered by Gary Yaral </footer>
-    <!-- Script-->
-    <script src="src/js/index.js" async></script>
+
     <!--Modal category-->
     <div class="modal-category modal-hidden">
         <button class="modal-close">X</button>
         <ul class="modal-list"></ul>
     </div>
+    <div class="cart cart-hidden">
+        <div class="cart-header">
+            <button class="cart-header-button">X</button>
+            <div class="cart-header-title">Su carrito</div>
+        </div>
+        <div class="cart-body">
+            <div class="cart-items-selected"></div>
+            <div class="cart-total">
+                Total: $20.00       
+            </div>
+            <div class="cart-btns">
+                <button class="clean-cart">Vaciar</button>
+                <button class="clean-cart">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script-->
+    <script src="src/js/index.js" async></script>
+    <!-- Script-->
+    <script src="src/js/cart.js" async></script>
 </body>
 </html>

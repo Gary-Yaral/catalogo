@@ -13,7 +13,6 @@
     margin:0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
 }
 
 body,
@@ -34,9 +33,10 @@ nav{
     height: 4rem;
     align-items: center;
     background: var(--black);
+    justify-content: space-around;
 }
 
-nav a{
+.modal-open{
     width:2.5rem;
     min-height:2.5rem;
     display:flex;
@@ -58,6 +58,40 @@ nav a span{
     color:#fff;
     margin-left: 1rem;
     font-size: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.icon-nav{
+    position:relative;
+    width:4rem;
+    height:4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-self: right;
+}
+
+.icon-cart{
+    color:#fff;
+    font-size: 2.8rem;
+}
+
+.items-counter{
+    display:flex;
+    position:absolute;
+    background-color: var(--orange);
+    top:5px;
+    right: 0px;
+    height:1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    font-size:.7rem;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{ 
@@ -280,11 +314,18 @@ footer{
 
 .modal-list a{
     width:100%;
-    height:2.5rem;
+    height:2.8rem;
     display:flex;
     justify-content: center;
     font-size:1.5rem;
     text-decoration:none;
+    color:#fff;
+    align-items: center;
+}
+
+.modal-list a:hover{
+    background: var(--blue-light);
+    color:#fff;
 }
 
 .modal-hidden{

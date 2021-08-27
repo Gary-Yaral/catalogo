@@ -165,9 +165,10 @@ function createSections(){
         let sectionCards = document.createElement('div');
         sectionCards.classList.add('cards');
 
-        items.forEach(({name,price,src, colors, discount}) =>{
+        items.forEach(({id,name,price,src, colors, discount}) =>{
             let card = document.createElement('div');
             card.classList.add('card');
+            card.id = id;
             let cardHeader = document.createElement('div');
             cardHeader.classList.add('card-header');
             let cardHeaderImage = document.createElement('img');
